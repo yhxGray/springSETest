@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring"/>
+	<classpathentry kind="lib" path="E:/java学习/lib/springMVC+mybatis/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="E:/java学习/lib/springMVC+mybatis/commons-logging-1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/Repositories/maven/cglib/cglib/2.2/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/Repositories/maven/asm/asm/3.0/asm-3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
