@@ -2,4 +2,4 @@ eclipse.preferences.version=1
 encoding//src/com/zx/i18n/test/I18NTest.java=UTF-8
 encoding//src/my_en_US.properties=UTF-8
 encoding//src/my_zh_CN.properties=UTF-8
-encoding/<project>=GBK
+encoding/<project>=UTF-8

@@ -5,12 +5,12 @@ import com.zx.io.test.CopyFile;
 public class GetClassTest {
 	public static void main(String... args){
 		try {
-			Class c1=Class.forName("com.zx.io.test.CopyFile");//µÚÒ»ÖÖ·½Ê½
+			Class c1=Class.forName("com.zx.io.test.CopyFile");//ç¬¬ä¸€ç§æ–¹å¼
 			System.out.println(c1.getName());
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		Class c2=CopyFile.class;//µÚ¶şÖÖ·½Ê½
-		Class c3=new CopyFile().getClass();//µÚÈıÖÖ·½Ê½
+		Class c2=CopyFile.class;//ç¬¬äºŒç§æ–¹å¼
+		Class c3=new CopyFile().getClass();//ç¬¬ä¸‰ç§æ–¹å¼
 	}
 }

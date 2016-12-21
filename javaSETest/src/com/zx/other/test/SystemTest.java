@@ -21,14 +21,14 @@ public class SystemTest {
 		}
 	}
 	/**
-	 * ¸Ã·½·¨Õë¶ÔCalendarµÄset·½·¨½øĞĞ²âÊÔ£¬Ö¤Ã÷ÊÇÑÓ³ÙĞŞ¸Ä
+	 * è¯¥æ–¹æ³•é’ˆå¯¹Calendarçš„setæ–¹æ³•è¿›è¡Œæµ‹è¯•ï¼Œè¯æ˜æ˜¯å»¶è¿Ÿä¿®æ”¹
 	 */
 	public static void calendarTest(){
 		Calendar cl=Calendar.getInstance();
 		cl.set(2002, 7, 31);
-		cl.set(Calendar.MONTH, 8);//´ËÊ±½öÊÇ½«clµÄÔÂ·İ¸Ä³ÉÁË9£¬µ«ÊÇ²¢Ã»ÓĞ¼ÆËãÕæÕıÊ±¼ä
-		//System.out.println(cl.getTime());²»×¢ÊÍµôÔò»á¼ÆËãÕæÕıÊ±¼ä£¬9ÔÂ31×Ô¶¯±ä³É10ÔÂ1
-		cl.set(Calendar.DATE,6);//´ËÊ±½öÊÇ½«clµÄÈÕÆÚ¸Ä³ÉÁË5£¬Ò²Ã»ÓĞ¼ÆËãÕæÕıÊ±¼ä
-		System.out.println(cl.getTime());//ÓÉÓÚµ÷ÓÃÁËget£¬ËùÒÔ¼ÆËãÕæÕıÊ±¼äºó´òÓ¡
+		cl.set(Calendar.MONTH, 8);//æ­¤æ—¶ä»…æ˜¯å°†clçš„æœˆä»½æ”¹æˆäº†9ï¼Œä½†æ˜¯å¹¶æ²¡æœ‰è®¡ç®—çœŸæ­£æ—¶é—´
+		//System.out.println(cl.getTime());ä¸æ³¨é‡Šæ‰åˆ™ä¼šè®¡ç®—çœŸæ­£æ—¶é—´ï¼Œ9æœˆ31è‡ªåŠ¨å˜æˆ10æœˆ1
+		cl.set(Calendar.DATE,6);//æ­¤æ—¶ä»…æ˜¯å°†clçš„æ—¥æœŸæ”¹æˆäº†5ï¼Œä¹Ÿæ²¡æœ‰è®¡ç®—çœŸæ­£æ—¶é—´
+		System.out.println(cl.getTime());//ç”±äºè°ƒç”¨äº†getï¼Œæ‰€ä»¥è®¡ç®—çœŸæ­£æ—¶é—´åæ‰“å°
 	}
 }

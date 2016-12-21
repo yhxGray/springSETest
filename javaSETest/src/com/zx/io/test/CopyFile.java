@@ -37,14 +37,14 @@ public class CopyFile {
 		String s="";
 		BufferedReader in=null;
 		BufferedWriter out=null;
-		System.out.println("ÇëÊäÈëÎÄ¼şÄÚÈİ£¬ÈôÁ¬ĞøÁ½´Î»Ø³µ×Ô¶¯½áÊø");
+		System.out.println("è¯·è¾“å…¥æ–‡ä»¶å†…å®¹ï¼Œè‹¥è¿ç»­ä¸¤æ¬¡å›è½¦è‡ªåŠ¨ç»“æŸ");
 		try {
-			in=new BufferedReader(new InputStreamReader(System.in)); //ÆäÊµÒ²¿ÉÒÔÓÃScanner
+			in=new BufferedReader(new InputStreamReader(System.in)); //å…¶å®ä¹Ÿå¯ä»¥ç”¨Scanner
 			out=new BufferedWriter(new FileWriter("E://ccc.txt"));
-			while((s=in.readLine()).length()!=0){  //Èç¹ûÏëÁ½´Î»Ø³µ½áÊø£¬²»¿ÉĞ´s=(in.readLine())!=null
+			while((s=in.readLine()).length()!=0){  //å¦‚æœæƒ³ä¸¤æ¬¡å›è½¦ç»“æŸï¼Œä¸å¯å†™s=(in.readLine())!=null
 				out.write(s);
-				out.newLine(); //±£Ö¤Óë¿ØÖÆÌ¨´òÓ¡Í¬²½
-				out.flush();  //±£Ö¤ÎÄ¼şÄÚÈİÄÜÊµÊ±Í¬²½£¬·ñÔòÔËĞĞ¹ı³ÌÖĞ¿ÉÄÜ²»»áĞ´ÈËÄÚÈİ				
+				out.newLine(); //ä¿è¯ä¸æ§åˆ¶å°æ‰“å°åŒæ­¥
+				out.flush();  //ä¿è¯æ–‡ä»¶å†…å®¹èƒ½å®æ—¶åŒæ­¥ï¼Œå¦åˆ™è¿è¡Œè¿‡ç¨‹ä¸­å¯èƒ½ä¸ä¼šå†™äººå†…å®¹				
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

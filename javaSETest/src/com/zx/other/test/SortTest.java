@@ -10,14 +10,14 @@ import com.zx.reflect.test.User;
 
 public class SortTest {
 	/**
-	 * ¹é²¢ÅÅĞò£¬ÏÈ½«Ëù´«¼¯ºÏ½øĞĞ¶ş·Ö£¬Ö±µ½²»ÄÜÔÙ¶ş·ÖÊ±£¬ÔÙ½øĞĞºÏ²¢£¬ºÏ²¢¹ı³ÌÖĞ½øĞĞÅÅĞò
+	 * å½’å¹¶æ’åºï¼Œå…ˆå°†æ‰€ä¼ é›†åˆè¿›è¡ŒäºŒåˆ†ï¼Œç›´åˆ°ä¸èƒ½å†äºŒåˆ†æ—¶ï¼Œå†è¿›è¡Œåˆå¹¶ï¼Œåˆå¹¶è¿‡ç¨‹ä¸­è¿›è¡Œæ’åº
 	 */
 	public List<User> mergeSort(List<User> list,int left,int right){
 		int mid=(left+right)/2;
 		if(left<right){
-			mergeSort(list,left,mid);//ÀûÓÃµü´ú²»¶ÏµØ½«¼¯ºÏ¶ş·Ö
+			mergeSort(list,left,mid);//åˆ©ç”¨è¿­ä»£ä¸æ–­åœ°å°†é›†åˆäºŒåˆ†
 			mergeSort(list,mid+1,right);
-			merge(list,left,mid,right);//´Ó×îÀï²ã£¬¼´µ¥¸öÔªËØ¿ªÊ¼£¬ÒÀ´ÎºÏ²¢£¬Ö±µ½ÖØĞÂºÏ²¢Îªlist
+			merge(list,left,mid,right);//ä»æœ€é‡Œå±‚ï¼Œå³å•ä¸ªå…ƒç´ å¼€å§‹ï¼Œä¾æ¬¡åˆå¹¶ï¼Œç›´åˆ°é‡æ–°åˆå¹¶ä¸ºlist
 		}
 		
 		return list;
@@ -29,26 +29,26 @@ public class SortTest {
 		int j=mid+1;
 		while(i<=mid&&j<=right){
 			if(list.get(i).compareTo(list.get(j))<0){
-				temp.add(list.get(i));//tempÏÈ´æÈëÅĞ¶ÏÎªĞ¡µÄÊı¾İ
+				temp.add(list.get(i));//tempå…ˆå­˜å…¥åˆ¤æ–­ä¸ºå°çš„æ•°æ®
 				i++;
 			}else{
-				temp.add(list.get(j));//tempÏÈ´æÈëÅĞ¶ÏÎªĞ¡µÄÊı¾İ
+				temp.add(list.get(j));//tempå…ˆå­˜å…¥åˆ¤æ–­ä¸ºå°çš„æ•°æ®
 				j++;
 			}
 		}
 		
 		while(i<=mid){
-			temp.add(list.get(i));//temp´æÈë±»ÅĞ¶ÏÎª´óµÄÊı¾İ
+			temp.add(list.get(i));//tempå­˜å…¥è¢«åˆ¤æ–­ä¸ºå¤§çš„æ•°æ®
 			i++;
 		}
 		
 		while(j<=right){
-			temp.add(list.get(j));//temp´æÈë±»ÅĞ¶ÏÎª´óµÄÊı¾İ
+			temp.add(list.get(j));//tempå­˜å…¥è¢«åˆ¤æ–­ä¸ºå¤§çš„æ•°æ®
 			j++;
 		}
 		
 		for(int k=0;k<temp.size();k++){
-			list.set(k+left, temp.get(k));//×îºó°Ñtemp¸³¸ølist£¬Íê³ÉÒ»´ÎÅÅĞò
+			list.set(k+left, temp.get(k));//æœ€åæŠŠtempèµ‹ç»™listï¼Œå®Œæˆä¸€æ¬¡æ’åº
 		}
 	}
 	
@@ -77,7 +77,7 @@ public class SortTest {
 		return index;
 	}
 	/**
-	 * ½»»»·½·¨£¬½»»»listÖĞaºÍbË÷ÒıËù¶ÔÓ¦µÄÔªËØ
+	 * äº¤æ¢æ–¹æ³•ï¼Œäº¤æ¢listä¸­aå’Œbç´¢å¼•æ‰€å¯¹åº”çš„å…ƒç´ 
 	 */
 	public void swap(List<User> list,int a,int b){
 		User temp=list.get(a);
